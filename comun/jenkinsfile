@@ -52,10 +52,6 @@ pipeline {
         sonarKey:'co.com.ceiba.adn:cobroPeaje.adn.edson.molina', 
         sonarName:'CeibaADN-cobroPeaje(edson.molina)', 
         sonarPathProperties:'./sonar-project.properties')
-    }
-
-
-
       }
     }
 
