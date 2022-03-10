@@ -57,7 +57,9 @@ pipeline {
     stage('Build') {
       steps {
         echo "------------>Build<------------"
-        sh './microservicio/gradlew --b ./microservicio/build.gradle build -x test'
+        
+        sh './microservicio/gradlew --b ./microservicio/build.gradle clean'
+				sh './microservicio/gradlew --b ./microservicio/build.gradle build -x test'
 
       }
     }  
