@@ -34,8 +34,4 @@ public class Pago {
         this.tipoVehiculo = tipoVehiculo;
         this.fechaPago = fechaPago;
     }
-
-
-   /* public Pago(Long id, String placa, Integer tipoVehiculo, LocalDateTime fechaPago) {
-    }*/
 }
