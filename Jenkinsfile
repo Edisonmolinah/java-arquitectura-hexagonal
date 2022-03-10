@@ -48,8 +48,8 @@ pipeline {
     stage('Static Code Analysis') {
       steps{
         echo '------------>Análisis de código estático<------------'
-        sonarqubeMasQualityGatesP(sonarKey:'co.com.ceiba.adn:java-arquitectura-hexagonal.edison.molina',
-          sonarName:'CeibaADN-java-arquitectura-hexagonal(edison.molina)', 
+        sonarqubeMasQualityGatesP(sonarKey:'co.com.ceiba.adn:Ceiba-PagoPeaje.edison.molina',
+          sonarName:'Ceiba-ADN Ceiba-PagoPeaje(edison.molina)', 
           sonarPathProperties:'./sonar-project.properties')
       }
     }
