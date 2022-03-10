@@ -1,6 +1,5 @@
 package com.ceiba.pago.modelo.entidad;
 
-import lombok.Builder;
 import lombok.Getter;
 
 import java.time.LocalDateTime;
@@ -8,7 +7,6 @@ import java.time.LocalDateTime;
 import static com.ceiba.dominio.ValidadorArgumento.validarObligatorio;
 
 @Getter
-@Builder
 public class Pago {
 
     private static final String SE_DEBE_INGRESAR_LA_PLACA = "Se debe ingresar la placa";
@@ -30,8 +28,8 @@ public class Pago {
 
         this.id = id;
         this.placa = placa;
-        this.pago = pago;
         this.tipoVehiculo = tipoVehiculo;
+        this.pago = pago;
         this.fechaPago = fechaPago;
     }
 }
