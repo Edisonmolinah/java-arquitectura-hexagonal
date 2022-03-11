@@ -1,4 +1,4 @@
-package com.ceiba.pago.servicio.PagoTestDataBuilder;
+package com.ceiba.pago.servicio.testdatabuilder;
 
 import com.ceiba.pago.modelo.entidad.Pago;
 import java.time.LocalDateTime;

@@ -9,7 +9,7 @@ import static com.ceiba.dominio.ValidadorArgumento.validarObligatorio;
 @Getter
 public class Pago {
 
-    private static final String SE_DEBE_INGRESAR_LA_PLACA = "Se debe ingresar la placa";
+    private static final String SE_DEBE_INGRESAR_LA_PLACA = "Se debe ingresar la placa de 6 caracteres";
     private static final String SE_DEBE_INGRESAR_EL_TIPO_VEHICULO = "El tipo de vehiculo debe ser entre 1 - 3";
     private static final String SE_DEBE_INGRESAR_LA_FECHA_PAGO = "Se debe ingresar la fecha de Pago";
 

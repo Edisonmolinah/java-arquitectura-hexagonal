@@ -23,5 +23,12 @@ public interface RepositorioPago {
      */
     boolean existePorId(Long id);
 
+    /**
+     * Permite validar si existe un usuario con un nombre
+     * @param placa
+     * @return si existe o no
+     */
+    boolean existe(String placa);
+
 
 }

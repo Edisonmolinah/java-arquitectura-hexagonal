@@ -21,8 +21,8 @@ public class RepositorioPagoMysql implements RepositorioPago {
     @SqlStatement(namespace="pago", value="existePorId")
     private static String sqlExistePorId;
 
-    /*@SqlStatement(namespace="pago", value="eliminar")
-    private static String sqlEliminar;*/
+    @SqlStatement(namespace="pago", value="existe")
+    private static String sqlExiste;
 
 
     public RepositorioPagoMysql(CustomNamedParameterJdbcTemplate customNamedParameterJdbcTemplate) {
@@ -49,4 +49,13 @@ public class RepositorioPagoMysql implements RepositorioPago {
 
         return this.customNamedParameterJdbcTemplate.getNamedParameterJdbcTemplate().queryForObject(sqlExistePorId, paramSource, Boolean.class);
     }
+
+    @Override
+    public boolean existe(String placa) {
+        MapSqlParameterSource paramSource = new MapSqlParameterSource();
+        paramSource.addValue("placa", placa);
+
+        return this.customNamedParameterJdbcTemplate.getNamedParameterJdbcTemplate().queryForObject(sqlExiste,paramSource, Boolean.class);
+    }
+
 }

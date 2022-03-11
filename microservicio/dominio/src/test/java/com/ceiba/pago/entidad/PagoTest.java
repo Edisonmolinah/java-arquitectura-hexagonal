@@ -3,7 +3,7 @@ package com.ceiba.pago.entidad;
 import com.ceiba.BasePrueba;
 import com.ceiba.dominio.excepcion.ExcepcionValorObligatorio;
 import com.ceiba.pago.modelo.entidad.Pago;
-import com.ceiba.pago.servicio.PagoTestDataBuilder.PagoTestDataBuilder;
+import com.ceiba.pago.servicio.testdatabuilder.PagoTestDataBuilder;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -37,7 +37,7 @@ public class PagoTest {
         BasePrueba.assertThrows(() -> {
                     pagoTestDataBuilder.build();
                 },
-                ExcepcionValorObligatorio.class, "Se debe ingresar la placa");
+                ExcepcionValorObligatorio.class, "Se debe ingresar la placa de 6 caracteres");
     }
 
     @Test
