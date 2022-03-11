@@ -19,11 +19,11 @@ public class ServicioCrearPagoTest {
 
     @Test
     @DisplayName("Deberia lanzar una exepecion cuando la longitud de la Placa sea menor a 6")
-    void deberiaLanzarUnaExepcionCuandoLaLongitudDeLaPlacaMenorASeis() {
+    void deberiaLanzarUnaExepcionCuandoLaLongitudDeLaPlacaSeaMenorASeis() {
         // arrange
-        PagoTestDataBuilder pagoTestDataBuilder = new PagoTestDataBuilder().conPlaca("abc12");
+        PagoTestDataBuilder pagoTestDataBuilder = new PagoTestDataBuilder().conPlaca("ab12");
         // act - assert
-        BasePrueba.assertThrows(pagoTestDataBuilder::build, ExcepcionLongitudValor.class, "Se debe ingresar la placa de 6 caracteres");
+        BasePrueba.assertThrows(pagoTestDataBuilder::build, ExcepcionLongitudValor.class, "La placa debe tener una longitud igual a 6");
     }
 
     @Test
