@@ -31,7 +31,7 @@ class ConsultaControladorPagoTest {
     @DisplayName("Deberia listar pagos")
     void deberiaListarPagos() throws Exception {
 
-        mocMvc.perform(get("/pagos")
+        mocMvc.perform(get("/pagos/2022-03-12")
                 .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$", hasSize(1)));

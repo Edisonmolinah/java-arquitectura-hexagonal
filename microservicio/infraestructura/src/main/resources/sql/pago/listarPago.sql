@@ -1,1 +1,1 @@
-SELECT * FROM pago;
+SELECT * FROM pago where fecha_pago >= :fecha;

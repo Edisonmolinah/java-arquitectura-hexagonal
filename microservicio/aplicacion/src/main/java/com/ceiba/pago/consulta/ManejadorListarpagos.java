@@ -4,6 +4,7 @@ import com.ceiba.pago.modelo.dto.DtoPago;
 import com.ceiba.pago.puerto.dao.DaoPago;
 import org.springframework.stereotype.Component;
 
+import java.time.LocalDate;
 import java.util.List;
 
 @Component
@@ -15,5 +16,5 @@ public class ManejadorListarpagos {
         this.daoPago = daoPago;
     }
 
-    public List<DtoPago> ejecutar(){ return this.daoPago.listar(); }
+    public List<DtoPago> ejecutar(LocalDate fecha){ return this.daoPago.listar(fecha); }
 }
