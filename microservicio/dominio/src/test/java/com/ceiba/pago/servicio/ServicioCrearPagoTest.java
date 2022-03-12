@@ -16,7 +16,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ServicioCrearPagoTest {
 
-
     @Test
     @DisplayName("Deberia lanzar una exepecion cuando la longitud de la Placa sea menor a 6")
     void deberiaLanzarUnaExepcionCuandoLaLongitudDeLaPlacaSeaMenorASeis() {
@@ -45,7 +44,7 @@ public class ServicioCrearPagoTest {
         Pago pago = new PagoTestDataBuilder().build();
         RepositorioPago repositorioPago = Mockito.mock(RepositorioPago.class);
         Mockito.when(repositorioPago.existe(Mockito.anyString())).thenReturn(false);
-        Mockito.when(repositorioPago.crear(pago)).thenReturn(10L); // Tener en cuenta este .thenReturn(10L) para validar algun conflicto de ejecucion
+        Mockito.when(repositorioPago.crear(pago)).thenReturn(10L);
         ServicioCrearPago servicioCrearPago = new ServicioCrearPago(repositorioPago);
         // act
         Long idPago = servicioCrearPago.ejecutar(pago);

@@ -2,21 +2,11 @@ package com.ceiba.pago.servicio;
 
 import com.ceiba.pago.modelo.dto.DtoCalcularPago;
 import com.ceiba.pago.modelo.dto.DtoPago;
-import com.ceiba.pago.puerto.dao.DaoPago;
-import com.ceiba.pago.puerto.repositorio.RepositorioPago;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 
 public class ServicioCalcularPago {
-
-
-    //private final RepositorioPago repositorioPago;
-
-
-   /* public ServicioCalcularPago(RepositorioPago repositorioPago) {
-        this.repositorioPago = repositorioPago;
-    }*/
 
     public DtoCalcularPago ejecutar(Integer tipoVehiculo ) throws Exception {
         calcularValorPago(tipoVehiculo);
