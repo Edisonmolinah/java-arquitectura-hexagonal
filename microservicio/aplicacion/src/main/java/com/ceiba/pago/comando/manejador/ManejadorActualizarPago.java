@@ -23,7 +23,7 @@ public class ManejadorActualizarPago implements ManejadorComandoRespuesta<Comand
     public DtoPagoResponse ejecutar(ComandoPago comandoPago) {
         Pago pago = this.fabricaPago.crear(comandoPago);
         this.servicioActualizarPago.ejecutar(pago);
-        return new DtoPagoResponse(pago.getId(), pago.getPlaca(), pago.getPago());
+        return new DtoPagoResponse(pago.getId(), pago.getPlaca(), pago.getValorPago());
     }
 
 }

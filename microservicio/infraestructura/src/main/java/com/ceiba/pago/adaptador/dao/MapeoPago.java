@@ -16,9 +16,9 @@ public class MapeoPago implements RowMapper<DtoPago>, MapperResult {
         Long id = resultSet.getLong("id");
         String placa = resultSet.getString("placa");
         Integer tipoVehiculo = resultSet.getInt("tipo_vehiculo");
-        Float pago = resultSet.getFloat("pago");
+        Float valorPago = resultSet.getFloat("valor_pago");
         LocalDateTime fechaPago = extraerLocalDateTime(resultSet, "fecha_pago");
 
-        return new DtoPago(id, placa, tipoVehiculo, pago, fechaPago);
+        return new DtoPago(id, placa, tipoVehiculo, valorPago, fechaPago);
     }
 }

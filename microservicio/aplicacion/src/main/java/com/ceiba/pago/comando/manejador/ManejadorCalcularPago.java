@@ -1,7 +1,6 @@
 package com.ceiba.pago.comando.manejador;
 
 import com.ceiba.pago.modelo.dto.DtoCalcularPago;
-import com.ceiba.pago.modelo.dto.DtoPagoResponse;
 import com.ceiba.pago.servicio.ServicioCalcularPago;
 import org.springframework.stereotype.Component;
 

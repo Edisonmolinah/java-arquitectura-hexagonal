@@ -22,7 +22,7 @@ public class ManejadorCrearPago  {
     public DtoPagoResponse ejecutar(ComandoPago comandoPago) {
         Pago pago = this.fabricaPago.crear(comandoPago);
         Long id = this.servicioCrearPago.ejecutar(pago);
-        return new DtoPagoResponse(id, pago.getPlaca(), pago.getPago());
+        return new DtoPagoResponse(id, pago.getPlaca(), pago.getValorPago());
     }
 
 

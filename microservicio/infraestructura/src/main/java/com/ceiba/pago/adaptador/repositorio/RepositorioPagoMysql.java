@@ -39,7 +39,7 @@ public class RepositorioPagoMysql implements RepositorioPago {
 
     @Override
     public void actualizar(Pago pago) {
-        //this.customNamedParameterJdbcTemplate.actualizar(pago, sqlActualizar);
+        this.customNamedParameterJdbcTemplate.actualizar(pago, sqlActualizar);
     }
 
     @Override

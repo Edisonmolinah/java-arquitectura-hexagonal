@@ -18,6 +18,7 @@ public class ComandoPagoTestDataBuilder {
     public ComandoPagoTestDataBuilder() {
         placa = "123abc";
         tipoVehiculo = 1;
+        pago = 8000f;
         fechaPago = LocalDateTime.now();
     }
 

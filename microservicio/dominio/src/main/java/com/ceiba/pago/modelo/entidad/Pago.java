@@ -20,10 +20,10 @@ public class Pago {
     private Long id;
     private String placa;
     private Integer tipoVehiculo;
-    private Float pago;
+    private Float valorPago;
     private LocalDateTime fechaPago;
 
-    public Pago(Long id,String placa, Integer tipoVehiculo, Float pago, LocalDateTime fechaPago) {
+    public Pago(Long id,String placa, Integer tipoVehiculo, Float valorPago, LocalDateTime fechaPago) {
         validarObligatorio(placa, SE_DEBE_INGRESAR_LA_PLACA);
         validarLongitud(placa, LONGITUD_PLACA, String.format(LA_PLACA_DEBE_TENER_UNA_LONGITUD_IGUAL_A,LONGITUD_PLACA));
         validarObligatorio(tipoVehiculo, SE_DEBE_INGRESAR_EL_TIPO_VEHICULO);
@@ -32,7 +32,7 @@ public class Pago {
         this.id = id;
         this.placa = placa;
         this.tipoVehiculo = tipoVehiculo;
-        this.pago = pago;
+        this.valorPago = valorPago;
         this.fechaPago = fechaPago;
     }
 }

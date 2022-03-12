@@ -15,7 +15,7 @@ public class FabricaPago {
                 comandoPago.getId(),
                 comandoPago.getPlaca(),
                 comandoPago.getTipoVehiculo(),
-                comandoPago.getPago(),
+                comandoPago.getValorPago(),
                 LocalDateTime.now()
         );
     }

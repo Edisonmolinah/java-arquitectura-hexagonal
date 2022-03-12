@@ -16,7 +16,7 @@ public class ComandoPago {
         private Long id;
         private String placa;
         private Integer tipoVehiculo;
-        private Float pago;
+        private Float valorPago;
         private LocalDateTime fecha;
 
 }

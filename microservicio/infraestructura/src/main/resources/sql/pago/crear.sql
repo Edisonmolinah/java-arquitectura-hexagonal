@@ -1,1 +1,1 @@
-insert into pago (id, placa, tipo_vehiculo,pago, fecha_pago) values (:id, :placa, :tipoVehiculo,:pago, :fechaPago)
+insert into pago (id, placa, tipo_vehiculo,valor_pago, fecha_pago) values (:id, :placa, :tipoVehiculo,:valorPago, :fechaPago)
