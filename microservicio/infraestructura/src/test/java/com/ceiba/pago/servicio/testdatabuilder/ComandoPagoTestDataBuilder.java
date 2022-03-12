@@ -1,24 +1,21 @@
 package com.ceiba.pago.servicio.testdatabuilder;
 
 import com.ceiba.pago.comando.ComandoPago;
-import com.ceiba.pago.modelo.entidad.Pago;
-import com.ceiba.usuario.comando.ComandoUsuario;
 
 import java.time.LocalDateTime;
-import java.util.UUID;
 
 public class ComandoPagoTestDataBuilder {
 
     private Long id;
     private String placa;
     private Integer tipoVehiculo;
-    private Float pago;
+    private Float valorPago;
     private LocalDateTime fechaPago;
 
     public ComandoPagoTestDataBuilder() {
         placa = "123abc";
         tipoVehiculo = 1;
-        pago = 8000f;
+        valorPago = 8000f;
         fechaPago = LocalDateTime.now();
     }
 
@@ -28,7 +25,7 @@ public class ComandoPagoTestDataBuilder {
     }
 
     public ComandoPago build() {
-        return new ComandoPago(id,placa, tipoVehiculo, pago,fechaPago);
+        return new ComandoPago(id,placa, tipoVehiculo, valorPago,fechaPago);
     }
 }
 
