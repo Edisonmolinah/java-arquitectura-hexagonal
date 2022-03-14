@@ -29,5 +29,4 @@ public class ConsultaControladorPago {
     public List<DtoPago> listar(@PathVariable @DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate fecha) {
         return this.manejadorListarpagos.ejecutar(fecha);
     }
-
 }

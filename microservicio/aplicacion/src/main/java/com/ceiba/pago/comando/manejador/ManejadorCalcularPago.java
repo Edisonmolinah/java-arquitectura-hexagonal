@@ -13,9 +13,7 @@ public class ManejadorCalcularPago {
         this.servicioCalcularPago = servicioCalcularPago;
     }
 
-    public DtoCalcularPago ejecutar(Integer tipoVehiculo) throws Exception {
+    public DtoCalcularPago ejecutar(Integer tipoVehiculo) {
       return this.servicioCalcularPago.ejecutar(tipoVehiculo);
-
     }
-
 }

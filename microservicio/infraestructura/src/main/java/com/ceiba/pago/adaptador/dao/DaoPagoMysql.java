@@ -25,7 +25,7 @@ public class DaoPagoMysql implements DaoPago {
 
     @Override
     public List<DtoPago> listar(LocalDate fecha) {
-        Map<String, LocalDate> parameters = new HashMap<String, LocalDate>();
+        Map<String, LocalDate> parameters = new HashMap<>();
         parameters.put("fecha", fecha);
         return this.customNamedParameterJdbcTemplate.getNamedParameterJdbcTemplate().query(sqlListar, parameters, new MapeoPago());
     }

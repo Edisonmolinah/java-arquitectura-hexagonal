@@ -24,9 +24,7 @@ public class ServicioActualizarPago {
         if(!existe) {
             throw new ExcepcionDuplicidad(EL_PAGO_NO_EXISTE_EN_EL_SISTEMA);
         }
-
     }
-
 }
 
 

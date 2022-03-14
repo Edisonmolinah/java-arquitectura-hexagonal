@@ -32,13 +32,11 @@ public class ComandoControladorPago {
     @ApiOperation("Crear Pago")
     public DtoPagoResponse crear(@RequestBody ComandoPago comandoPago) {
          return manejadorCrearPago.ejecutar(comandoPago);
-
     }
     @GetMapping("/calcular_pago/{tipoVehiculo}")
     @ApiOperation("Calcular Pago")
     public DtoCalcularPago calcularPago(@PathVariable Integer tipoVehiculo) throws Exception {
         return manejadorCalcularPago.ejecutar(tipoVehiculo);
-
     }
 
     @PutMapping(value="/{id}")
@@ -47,7 +45,4 @@ public class ComandoControladorPago {
         comandoPago.setId(id);
        return manejadorActualizarPago.ejecutar(comandoPago);
     }
-
-
-
 }

@@ -24,7 +24,4 @@ public class ManejadorCrearPago  {
         Long id = this.servicioCrearPago.ejecutar(pago);
         return new DtoPagoResponse(id, pago.getPlaca(), pago.getValorPago());
     }
-
-
-
 }
