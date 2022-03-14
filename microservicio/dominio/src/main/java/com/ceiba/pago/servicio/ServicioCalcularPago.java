@@ -1,6 +1,6 @@
 package com.ceiba.pago.servicio;
 
-import com.ceiba.dominio.excepcion.ExcepcionVehiculoIncorrecto;
+import com.ceiba.dominio.excepcion.ExcepcionValorInvalido;
 import com.ceiba.pago.modelo.dto.DtoCalcularPago;
 import com.ceiba.pago.modelo.dto.DtoPago;
 
@@ -37,7 +37,7 @@ public class ServicioCalcularPago {
                 break;
 
             default:
-                throw new ExcepcionVehiculoIncorrecto(EL_TIPO_DE_VEHICULO_ES_INCORRECTO);
+                throw new ExcepcionValorInvalido(EL_TIPO_DE_VEHICULO_ES_INCORRECTO);
         }
 
         if (fechaCobro.getDayOfWeek().getValue() == DayOfWeek.SATURDAY.getValue()
