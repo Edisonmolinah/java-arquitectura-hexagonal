@@ -30,5 +30,4 @@ public interface RepositorioPago {
      */
     boolean existe(String placa);
 
-
 }

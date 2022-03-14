@@ -54,7 +54,7 @@ public class ServicioCalcularPagoTest {
             assertEquals(18000*1.15f, dtoCalcularPago.getValorAPagar());
             assertEquals(3, dtoCalcularPago.getTipoVehiculo());
         }else
-            assertEquals(16000, dtoCalcularPago.getValorAPagar());
+            assertEquals(18000, dtoCalcularPago.getValorAPagar());
         assertEquals(3, dtoCalcularPago.getTipoVehiculo());
     }
 
