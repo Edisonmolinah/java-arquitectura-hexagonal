@@ -1,8 +1,9 @@
 package com.ceiba.pago.servicio;
 
+import com.ceiba.dominio.excepcion.ExcepcionVehiculoIncorrecto;
 import com.ceiba.pago.modelo.dto.DtoCalcularPago;
 import com.ceiba.pago.modelo.dto.DtoPago;
-import com.ceiba.dominio.excepcion.ExcepcionVehiculoIncorrecto;
+
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;
