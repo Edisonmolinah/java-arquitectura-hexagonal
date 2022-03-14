@@ -35,7 +35,7 @@ public class ComandoControladorPago {
     }
     @GetMapping("/calcular_pago/{tipoVehiculo}")
     @ApiOperation("Calcular Pago")
-    public DtoCalcularPago calcularPago(@PathVariable Integer tipoVehiculo) throws Exception {
+    public DtoCalcularPago calcularPago(@PathVariable Integer tipoVehiculo) {
         return manejadorCalcularPago.ejecutar(tipoVehiculo);
     }
 
