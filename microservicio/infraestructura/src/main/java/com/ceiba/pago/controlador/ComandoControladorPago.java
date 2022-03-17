@@ -11,7 +11,9 @@ import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+
 @RestController
+@CrossOrigin
 @RequestMapping("/pago")
 @Api(tags = { "Controlador comando usuario"})
 public class ComandoControladorPago {
@@ -33,6 +35,7 @@ public class ComandoControladorPago {
     public DtoPagoResponse crear(@RequestBody ComandoPago comandoPago) {
          return manejadorCrearPago.ejecutar(comandoPago);
     }
+
     @GetMapping("/calcular_pago/{tipoVehiculo}")
     @ApiOperation("Calcular Pago")
     public DtoCalcularPago calcularPago(@PathVariable Integer tipoVehiculo) {

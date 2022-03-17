@@ -21,7 +21,7 @@ public class ServicioCrearPago {
     }
 
     private void validarExistenciaPrevia(Pago pago) {
-        boolean existe = this.repositorioPago.existe(pago.getPlaca());
+        boolean existe = this.repositorioPago.existePorId(pago.getId());
         if(existe) {
             throw new ExcepcionDuplicidad(EL_PAGO_YA_EXISTE_EN_EL_SISTEMA);
         }
