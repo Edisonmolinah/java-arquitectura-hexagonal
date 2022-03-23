@@ -52,8 +52,6 @@ public class PagoTest {
                 ExcepcionValorObligatorio.class, "El tipo de vehiculo debe ser entre 1 - 3");
     }
 
-
-
     @Test
     void deberiaFallarSinFechaCreacion() {
 
@@ -65,6 +63,4 @@ public class PagoTest {
                 },
                 ExcepcionValorObligatorio.class, "Se debe ingresar la fecha de Pago");
     }
-
-
 }

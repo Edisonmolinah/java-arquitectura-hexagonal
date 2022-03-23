@@ -14,7 +14,7 @@ public class PagoTestDataBuilder {
 
    public PagoTestDataBuilder() {
 
-
+        id = 1l;
         placa = "abc123";
         tipoVehiculo = 1;
         fechaPago = LocalDateTime.now();

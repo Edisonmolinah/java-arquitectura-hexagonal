@@ -31,7 +31,7 @@ public class ServicioCrearPagoTest {
         // arrange
         Pago pago = new PagoTestDataBuilder().build();
         RepositorioPago repositorioPago = Mockito.mock(RepositorioPago.class);
-        Mockito.when(repositorioPago.existe(Mockito.anyString())).thenReturn(true);
+        Mockito.when(repositorioPago.existePorId(Mockito.anyLong())).thenReturn(true);
         ServicioCrearPago servicioCrearPago = new ServicioCrearPago(repositorioPago);
         // act - assert
         BasePrueba.assertThrows(() -> servicioCrearPago.ejecutar(pago), ExcepcionDuplicidad.class,"El pago ya existe en el sistema");
